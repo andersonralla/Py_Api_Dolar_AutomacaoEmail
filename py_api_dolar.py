@@ -1,3 +1,5 @@
+#Scrip que faz conexao com a API para pegar o valor atual do Dolar e envia uma sinalizacao para o email em determinada condicao do valor
+
 
 import requests
 
@@ -47,23 +49,4 @@ def enviar_email(cotacao):
 
 if cotacao < 5.25:
     enviar_email(cotacao)
-
-
-
-
-#deploy
-
-# heroku login
-
-# git init
-
-# heroku git:remote -a pyalertastudyapi
-
-# pip freeze > requirements.txt
-
-# git add .
-# git commit -am "Uppp"
-# git push heroku master
-
-#HEROKU pyalertastudyapi
 
